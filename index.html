@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng Mối Quan Hệ Xã Hội</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        #graph {
+            width: 100%;
+            height: 600px;
+        }
+        input, select, button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ứng dụng Mối Quan Hệ Xã Hội</h1>
+    <div>
+        <input type="text" id="nameInput" placeholder="Nhập tên">
+        <button onclick="addPerson()">Thêm Người</button>
+    </div>
+    <div>
+        <select id="personA"></select>
+        <select id="personB"></select>
+        <button onclick="linkPeople()">Liên Kết</button>
+    </div>
+    <div id="graph"></div>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
